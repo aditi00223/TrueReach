@@ -2,6 +2,7 @@ import './App.css';
 import mockData from './data/mockData.json';
 import CreatorCard from './components/CreatorCard';
 import IntentChart from './components/IntentChart';
+import CommentViewer from './components/CommentViewer';
 
 function App() {
   return (
@@ -31,7 +32,7 @@ function App() {
       {/* Comment Viewer Section */}
       <section className="comment-viewer-section">
         <h2>Sample Comments</h2>
-        {/* CommentViewer component will go here */}
+        <CommentViewer data={mockData} />
       </section>
 
       {/* Best Pick Banner */}
