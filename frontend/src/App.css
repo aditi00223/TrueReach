@@ -1,38 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f4f5f7;
+}
+
 .App {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.app-header {
   text-align: center;
+  margin-bottom: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-header h1 {
+  margin-bottom: 5px;
+  color: #1a1a1a;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app-header p {
+  color: #666;
+  margin-top: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Section headings */
+section h2 {
+  font-size: 20px;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+/* Creator Cards Grid */
+.creator-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.creator-card {
+  background: white;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.creator-card h3 {
+  margin: 0 0 8px 0;
+  color: #1a1a1a;
+}
+
+.creator-card .score {
+  font-size: 22px;
+  font-weight: bold;
+  color: #5b3df0;
+  margin: 4px 0;
+}
+
+.creator-card .total-comments {
+  color: #888;
+  font-size: 13px;
+  margin: 0 0 12px 0;
+}
+
+.breakdown {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 6px;
+  font-size: 13px;
 }
 
-.App-link {
-  color: #61dafb;
+.breakdown .high-intent {
+  color: #1a8c4a;
+  font-weight: 500;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.breakdown .curious {
+  color: #c98a1d;
+}
+
+.breakdown .generic {
+  color: #999;
 }
