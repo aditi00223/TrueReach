@@ -1,6 +1,7 @@
 import './App.css';
 import mockData from './data/mockData.json';
 import CreatorCard from './components/CreatorCard';
+import IntentChart from './components/IntentChart';
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
       {/* Chart Section */}
       <section className="chart-section">
         <h2>Intent Comparison</h2>
-        {/* IntentChart component will go here */}
+        <IntentChart data={mockData} />
       </section>
 
       {/* Comment Viewer Section */}
