@@ -92,3 +92,57 @@ section {
 .breakdown .generic {
   color: #999;
 }
+
+/* Comment Viewer */
+.comment-viewer-creator {
+  background: white;
+  border-radius: 12px;
+  padding: 18px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.comment-viewer-creator h3 {
+  margin: 0 0 12px 0;
+  color: #1a1a1a;
+}
+
+.comment-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.comment-column h4 {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.comment-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.comment-column li {
+  background: #f4f5f7;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #333;
+}
+
+.high-intent-column li {
+  border-left: 3px solid #1a8c4a;
+}
+
+.curious-column li {
+  border-left: 3px solid #c98a1d;
+}
+
+.generic-column li {
+  border-left: 3px solid #999;
+}
