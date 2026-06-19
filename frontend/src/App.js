@@ -3,6 +3,7 @@ import mockData from './data/mockData.json';
 import CreatorCard from './components/CreatorCard';
 import IntentChart from './components/IntentChart';
 import CommentViewer from './components/CommentViewer';
+import BestPickBanner from './components/BestPickBanner';
 
 function App() {
   return (
@@ -37,7 +38,7 @@ function App() {
 
       {/* Best Pick Banner */}
       <section className="best-pick-section">
-        {/* BestPickBanner component will go here */}
+        <BestPickBanner data={mockData} />
       </section>
     </div>
   );
