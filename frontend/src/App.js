@@ -1,11 +1,52 @@
+import { useState, useEffect } from 'react';
 import './App.css';
-import mockData from './data/mockData.json';
 import CreatorCard from './components/CreatorCard';
 import IntentChart from './components/IntentChart';
 import CommentViewer from './components/CommentViewer';
 import BestPickBanner from './components/BestPickBanner';
+import { getCreatorScores } from './services/api';
 
 function App() {
+  const [creators, setCreators] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const data = await getCreatorScores();
+        setCreators(data);
+      } catch (err) {
+        setError('Could not load data. Make sure the backend server is running.');
+      } finally {
+        setLoading(false);
+      }
+    }
+    fetchData();
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="App">
+        <header className="app-header">
+          <h1>Purchase-Intent Signal Scorer</h1>
+          <p>Analyzing comments... this may take a few seconds ⏳</p>
+        </header>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="App">
+        <header className="app-header">
+          <h1>Purchase-Intent Signal Scorer</h1>
+          <p>{error}</p>
+        </header>
+      </div>
+    );
+  }
+
   return (
     <div className="App">
       {/* Header */}
@@ -18,7 +59,7 @@ function App() {
       <section className="creator-cards-section">
         <h2>Creators</h2>
         <div className="creator-cards-grid">
-          {mockData.map((creator) => (
+          {creators.map((creator) => (
             <CreatorCard key={creator.creator} creator={creator} />
           ))}
         </div>
@@ -27,18 +68,18 @@ function App() {
       {/* Chart Section */}
       <section className="chart-section">
         <h2>Intent Comparison</h2>
-        <IntentChart data={mockData} />
+        <IntentChart data={creators} />
       </section>
 
       {/* Comment Viewer Section */}
       <section className="comment-viewer-section">
         <h2>Sample Comments</h2>
-        <CommentViewer data={mockData} />
+        <CommentViewer data={creators} />
       </section>
 
       {/* Best Pick Banner */}
       <section className="best-pick-section">
-        <BestPickBanner data={mockData} />
+        <BestPickBanner data={creators} />
       </section>
     </div>
   );
