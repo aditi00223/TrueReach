@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f4f5f7;
+}
+
+.App {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.app-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.app-header h1 {
+  margin-bottom: 5px;
+  color: #1a1a1a;
+}
+
+.app-header p {
+  color: #666;
+  margin-top: 0;
+}
+
+/* Section headings */
+section h2 {
+  font-size: 20px;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+/* Creator Cards Grid */
+.creator-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.creator-card {
+  background: white;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.creator-card h3 {
+  margin: 0 0 8px 0;
+  color: #1a1a1a;
+}
+
+.creator-card .score {
+  font-size: 22px;
+  font-weight: bold;
+  color: #5b3df0;
+  margin: 4px 0;
+}
+
+.creator-card .total-comments {
+  color: #888;
+  font-size: 13px;
+  margin: 0 0 12px 0;
+}
+
+.breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+}
+
+.breakdown .high-intent {
+  color: #1a8c4a;
+  font-weight: 500;
+}
+
+.breakdown .curious {
+  color: #c98a1d;
+}
+
+.breakdown .generic {
+  color: #999;
+}
+
+/* Comment Viewer */
+.comment-viewer-creator {
+  background: white;
+  border-radius: 12px;
+  padding: 18px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.comment-viewer-creator h3 {
+  margin: 0 0 12px 0;
+  color: #1a1a1a;
+}
+
+.comment-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.comment-column h4 {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.comment-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.comment-column li {
+  background: #f4f5f7;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #333;
+}
+
+.high-intent-column li {
+  border-left: 3px solid #1a8c4a;
+}
+
+.curious-column li {
+  border-left: 3px solid #c98a1d;
+}
+
+.generic-column li {
+  border-left: 3px solid #999;
+}
+
+/* Best Pick Banner */
+.best-pick-banner {
+  background: linear-gradient(135deg, #5b3df0, #8a6dfc);
+  color: white;
+  border-radius: 14px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(91, 61, 240, 0.3);
+}
+
+.best-pick-label {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.best-pick-banner h3 {
+  margin: 8px 0;
+  font-size: 26px;
+}
+
+.best-pick-banner p {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.9;
+}

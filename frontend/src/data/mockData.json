@@ -1,0 +1,82 @@
+[
+  {
+    "creator": "Riya Kapoor",
+    "totalComments": 62,
+    "score": 78,
+    "breakdown": {
+      "highIntent": 28,
+      "curious": 19,
+      "generic": 15
+    },
+    "sampleComments": {
+      "highIntent": [
+        "Where can I buy this? Link please!",
+        "Price kitna hai isska?",
+        "Is this available in size M?",
+        "Kahan se order karu, link share karo please"
+      ],
+      "curious": [
+        "Which brand is this from?",
+        "Kaha se liya ye, koi specific store?",
+        "Is this made in India?"
+      ],
+      "generic": [
+        "🔥🔥🔥 amazing",
+        "Looking gorgeous as always ❤️",
+        "Love this look!"
+      ]
+    }
+  },
+  {
+    "creator": "Aman Verma",
+    "totalComments": 55,
+    "score": 64,
+    "breakdown": {
+      "highIntent": 19,
+      "curious": 21,
+      "generic": 15
+    },
+    "sampleComments": {
+      "highIntent": [
+        "Link bhejo bro, need this asap",
+        "What's the price range?",
+        "Available on Myntra?"
+      ],
+      "curious": [
+        "What brand is this?",
+        "Kaunsi company ka hai bhai",
+        "Origin country kya hai iska?"
+      ],
+      "generic": [
+        "Nice video bro",
+        "👏👏👏",
+        "Great content as usual"
+      ]
+    }
+  },
+  {
+    "creator": "Sana Sheikh",
+    "totalComments": 70,
+    "score": 41,
+    "breakdown": {
+      "highIntent": 12,
+      "curious": 18,
+      "generic": 40
+    },
+    "sampleComments": {
+      "highIntent": [
+        "Where to buy this please",
+        "DM me the price"
+      ],
+      "curious": [
+        "Which brand collab is this?",
+        "Yeh kahan ki brand hai?"
+      ],
+      "generic": [
+        "Beautiful as always 😍",
+        "Outfit on point!",
+        "Vibe is immaculate 🔥"
+      ]
+    }
+  }
+]
