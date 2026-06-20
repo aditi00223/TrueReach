@@ -179,3 +179,9 @@ section {
   font-size: 14px;
   opacity: 0.9;
 }
+
+.no-comments {
+  color: #aaa;
+  font-style: italic;
+  font-size: 13px;
+}
