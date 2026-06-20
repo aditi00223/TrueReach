@@ -146,3 +146,36 @@ section {
 .generic-column li {
   border-left: 3px solid #999;
 }
+
+/* Best Pick Banner */
+.best-pick-banner {
+  background: linear-gradient(135deg, #5b3df0, #8a6dfc);
+  color: white;
+  border-radius: 14px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(91, 61, 240, 0.3);
+}
+
+.best-pick-label {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.best-pick-banner h3 {
+  margin: 8px 0;
+  font-size: 26px;
+}
+
+.best-pick-banner p {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
