@@ -1,4 +1,4 @@
-# TrueReach — Purchase-Intent Signal Scorer
+# TrueReach — Purchase-Intent Signal Scorer.
 
 An AI-powered dashboard that analyzes creator comment sections to identify genuine **purchase intent** — not just engagement.
 
