@@ -4,7 +4,7 @@ An AI-powered dashboard that analyzes creator comment sections to identify genui
 
 Instead of relying on vanity metrics like likes or follower count, TrueReach uses Gemini to classify every comment into **High Intent**, **Curious**, or **Generic**, helping brands choose the creator whose audience is most likely to actually buy.
 
-## Features
+## Features.
 
 - 📊 Creator cards with intent scores and comment breakdown
 - 📈 Side-by-side intent comparison chart
